@@ -12,7 +12,18 @@
 		9129A77C20C452FC00D9E9F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9129A77A20C452FC00D9E9F0 /* Main.storyboard */; };
 		9129A77E20C452FD00D9E9F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9129A77D20C452FD00D9E9F0 /* Assets.xcassets */; };
 		9129A78120C452FD00D9E9F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9129A77F20C452FD00D9E9F0 /* LaunchScreen.storyboard */; };
+		91421BDE20D56957009C23EB /* URLViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91421BDD20D56957009C23EB /* URLViewerUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91421BE020D56957009C23EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9129A76B20C452FC00D9E9F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9129A77220C452FC00D9E9F0;
+			remoteInfo = URLViewer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9129A77320C452FC00D9E9F0 /* URLViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		9129A77D20C452FD00D9E9F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9129A78020C452FD00D9E9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9129A78220C452FD00D9E9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91421BDB20D56957009C23EB /* URLViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91421BDD20D56957009C23EB /* URLViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLViewerUITests.swift; sourceTree = "<group>"; };
+		91421BDF20D56957009C23EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9129A77020C452FC00D9E9F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91421BD820D56957009C23EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				9129A77520C452FC00D9E9F0 /* URLViewer */,
+				91421BDC20D56957009C23EB /* URLViewerUITests */,
 				9129A77420C452FC00D9E9F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				9129A77320C452FC00D9E9F0 /* URLViewer.app */,
+				91421BDB20D56957009C23EB /* URLViewerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				9129A78220C452FD00D9E9F0 /* Info.plist */,
 			);
 			path = URLViewer;
+			sourceTree = "<group>";
+		};
+		91421BDC20D56957009C23EB /* URLViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				91421BDD20D56957009C23EB /* URLViewerUITests.swift */,
+				91421BDF20D56957009C23EB /* Info.plist */,
+			);
+			path = URLViewerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,18 +116,40 @@
 			productReference = 9129A77320C452FC00D9E9F0 /* URLViewer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		91421BDA20D56957009C23EB /* URLViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91421BE420D56957009C23EB /* Build configuration list for PBXNativeTarget "URLViewerUITests" */;
+			buildPhases = (
+				91421BD720D56957009C23EB /* Sources */,
+				91421BD820D56957009C23EB /* Frameworks */,
+				91421BD920D56957009C23EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91421BE120D56957009C23EB /* PBXTargetDependency */,
+			);
+			name = URLViewerUITests;
+			productName = URLViewerUITests;
+			productReference = 91421BDB20D56957009C23EB /* URLViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		9129A76B20C452FC00D9E9F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Alexander Ross";
 				TargetAttributes = {
 					9129A77220C452FC00D9E9F0 = {
 						CreatedOnToolsVersion = 9.3.1;
+					};
+					91421BDA20D56957009C23EB = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 9129A77220C452FC00D9E9F0;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				9129A77220C452FC00D9E9F0 /* URLViewer */,
+				91421BDA20D56957009C23EB /* URLViewerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		91421BD920D56957009C23EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		91421BD720D56957009C23EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91421BDE20D56957009C23EB /* URLViewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91421BE120D56957009C23EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9129A77220C452FC00D9E9F0 /* URLViewer */;
+			targetProxy = 91421BE020D56957009C23EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9129A77A20C452FC00D9E9F0 /* Main.storyboard */ = {
@@ -312,6 +390,46 @@
 			};
 			name = Release;
 		};
+		91421BE220D56957009C23EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7RS8ZRKD6A;
+				INFOPLIST_FILE = URLViewerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.aross.URLViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = URLViewer;
+			};
+			name = Debug;
+		};
+		91421BE320D56957009C23EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7RS8ZRKD6A;
+				INFOPLIST_FILE = URLViewerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.aross.URLViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = URLViewer;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +447,15 @@
 			buildConfigurations = (
 				9129A78620C452FD00D9E9F0 /* Debug */,
 				9129A78720C452FD00D9E9F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91421BE420D56957009C23EB /* Build configuration list for PBXNativeTarget "URLViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91421BE220D56957009C23EB /* Debug */,
+				91421BE320D56957009C23EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
